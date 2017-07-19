@@ -6,17 +6,23 @@
     android:layout_height="match_parent"
     tools:context="me.fanjie.testopencv3.MainActivity">
 
-    <!--<me.fanjie.testopencv3.CvCameraPreview-->
-        <!--android:id="@+id/cvCameraPreview"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--app:camera_type="front"-->
-        <!--app:scale_type="full" />-->
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <SurfaceView
-        android:id="@+id/cvCameraPreview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="相机" />
 
+        <Button
+            android:id="@+id/btn_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video" />
+    </LinearLayout>
 
 </FrameLayout>

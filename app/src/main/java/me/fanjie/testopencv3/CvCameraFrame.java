@@ -26,7 +26,6 @@ import android.util.Log;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 
-import org.bytedeco.javacpp.opencv_core;
 import org.bytedeco.javacv.FFmpegFrameFilter;
 import org.bytedeco.javacv.Frame;
 import org.bytedeco.javacv.FrameFilter;
@@ -556,7 +555,7 @@ public class CvCameraFrame {
 
         @Override
         public void onPreviewFrame(byte[] raw, Camera cam) {
-            opencv_core.Mat mat = new opencv_core.Mat(raw);
+//            opencv_core.Mat mat = new opencv_core.Mat(raw);
             processFrame(previewBuffer, cam);
             // [IMPORTANT!] remember to reset the CallbackBuffer at the end of every onPreviewFrame event.
             // Seems weird, but it works
