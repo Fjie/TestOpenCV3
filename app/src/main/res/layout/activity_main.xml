@@ -16,13 +16,18 @@
             android:id="@+id/btn_camera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="相机" />
+            android:text="camera" />
 
         <Button
             android:id="@+id/btn_video"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Video" />
+        <Button
+            android:id="@+id/btn_permissions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="permissions" />
     </LinearLayout>
 
 </FrameLayout>

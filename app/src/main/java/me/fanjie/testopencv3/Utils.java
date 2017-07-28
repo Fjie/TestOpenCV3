@@ -125,6 +125,16 @@ public class Utils {
         return null;
     }
 
+    void test(){
+        while (true){
+            try {
+                wait(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
 
     /**
      * @param uri The Uri to check.
